@@ -1,11 +1,15 @@
 
-
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
 .g-body{
     font-family:arial, Helvetica, sans-serif;
     background-color:#f4f4f4;
     display:grid;
     grid-template-columns:auto;
-    grid-template-rows: 170px auto 150px;
+    grid-template-rows: 15% 1fr 15%;
     grid-template-areas:
         'header'
         'main'
@@ -19,10 +23,10 @@
     grid-area:header;
     background-color:#333;
     color:#fff;
-    
+    /* align-items:center; */
     text-align:center;
     padding:20px;
-    margin:20px;
+    /* margin:20px; */
     font-size:3rem;
     
     
@@ -63,7 +67,7 @@
     /* justify-content:space-between; */
     /* width:auto; */
     max-width:1000px;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     margin-left: 20%;
     margin-right: 20%;
     flex:1;
